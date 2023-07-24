@@ -1,0 +1,48 @@
+-- 부모 테이블 fairymem 생성
+CREATE TABLE fairymem (
+  fnum INT PRIMARY KEY AUTO_INCREMENT NOT NALL,
+  userid VARCHAR(20) NOT NALL,
+  pass VARCHAR(20) NOT NALL,
+  name VARCHAR(50) NOT NALL,
+  phone VARCHAR(20) NOT NALL,
+  email VARCHAR(30) NOT NALL,
+  birth VARCHAR(10),
+  gender VARCHAR(3),
+  agrSipulation1 VARCHAR(2),
+  agrSipulation2 VARCHAR(2),
+  agrSipulation3 VARCHAR(2)
+);
+
+-- 부모 테이블 book 생성
+CREATE TABLE book (
+  bnum INT PRIMARY KEY  NOT NALL,
+  bname VARCHAR(100)  NOT NALL,
+  publisher VARCHAR(50)  NOT NALL,
+  author VARCHAR(100)  NOT NALL,
+  price INT  NOT NALL,
+  pdate VARCHAR(45)  NOT NALL,
+  cvrimg VARCHAR(45)  NOT NALL
+);
+
+-- 자식 테이블 cart 생성
+CREATE TABLE cart (
+  bnum INT PRIMARY KEY AUTO_INCREMENT NOT NALL,
+  uid VARCHAR(45) NOT NALL,
+  bname VARCHAR(45) NOT NALL,
+  price INT NOT NALL,
+  quantity INT NOT NALL,
+  cvuimg VARCHAR(45) NOT NALL,
+
+  FOREIGN KEY (uid) REFERENCES fairymem(userid)
+);
+
+-- 자식 테이블 boughtbook 생성
+CREATE TABLE boughtbook (
+  bnum INT NOT NULL,
+  uid VARCHAR(45) NOT NULL,
+  bname VARCHAR(45) NOT NULL,
+  price INT NOT NULL,
+  quantity INT NOT NULL,
+  beyday DATE NOT NULL,
+  FOREIGN KEY (bnum) REFERENCES book(bnum)
+);
