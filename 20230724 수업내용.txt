@@ -1,0 +1,13 @@
+Markdown(*.md)
+- github.com에서 지원
+- Python, bigdata, AI코딩 : Anaconda(Jupyter notebook) - 파이썬 할 때 이것만 씀
+
+- github.com README.md (설명서를 만들 수 있어야함)
+- github.com에서 지원하는 홈페이지에서 지원(html, md)
+- Jupyter notebook : 설명문(주석) (다음주 부터 파이썬 코딩을 시작함)
+
+- 개발환경 : github.com에서 연습용 Repository 생성(README.md 포함)
+
+- Spring Security
+- React, Vue
+- Single Page Application(SPA) : 웹 페이지 하나로 다 만들 수 있음
