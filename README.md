@@ -52,6 +52,8 @@ public class DemoApplication {
 [구글바로가기](http://google.com) 
 
 ## 아이디를 사용하여 보여지는 문자열 표시하기
+-[보여질 문자열][아이디] 형식으로 아이디를 저장히고 아래처럼 아이디를 사용하여 보여질 문자열을 표시한다
+- \[아이디]: URL "Optional Title"
 -[google 바로가기][google]   
 -[google]:http://google.com "Google 사이트로 이동"   
 
