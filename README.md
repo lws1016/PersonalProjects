@@ -52,8 +52,8 @@ public class DemoApplication {
 [구글바로가기](http://google.com) 
 
 ## 아이디를 사용하여 보여지는 문자열 표시하기
--[구글 바로가기][google]   
--[google]:http://google.com "Google 사이트로 이동합니다"   
+-[google 바로가기][google]   
+-[google]:http://google.com "Google 사이트로 이동"   
 
 ## 문서 내부 참조
 [문서의 처음으로 이동](#마크다운-간단-문법)
