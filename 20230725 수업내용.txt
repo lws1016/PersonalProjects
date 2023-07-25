@@ -1,0 +1,8 @@
+github의 클라이언트 툴, SourceTree (github의 클라이언트 프로그램)
+- git 콘솔 명령을 GUI 방식으로 실행
+- 다운로드 sourcetreeapp.com
+- 사용절차는 git CLI 절차와 동일
+- CLI
+
+내일은 Spring Security 배울 예정
+마지막 프로젝트에는 Vue 적용하기로 
