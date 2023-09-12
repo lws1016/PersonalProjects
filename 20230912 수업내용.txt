@@ -1,0 +1,83 @@
+콤포넌트 간의 통신
+라우팅: 요청을 로컬에서 처리 방법
+Vue-Spring 통합
+ - Back-end : Spring
+ - Front-end: Vue
+
+부모컴포넌트 -> 자식 (데이터 전달)
+<Modal :msg="msg" :test="color" @close="onClose">
+<div>{{ data }} </div>
+onClose(param) {
+  this.data = param
+}
+
+
+props:['msg']
+<div> {{ msg }} </div>
+
+this.$emit('close',xxxxx) - 자식 콤포넌트 
+
+Gugu.vue(자식)
+- 구구단 화면에 표시
+- App.vue(부모)에서 전달한 단수에 따라 구구단이 달라진다
+- 
+
+하위 콤포넌트 사용 절차
+- 하위 컴포넌트 생성
+- 부모 콤포넌트에서 import Gugu './components/Gugu.vue'
+- 부모 스크립트 안에 components : { Gugu, xxx }
+- 부모 template 안에 <Gugu></Gugu> 
+
+<script>
+  import ....	
+  export default {
+ 	name : 'App'
+	components : { Gugu },
+	data() {
+	   return {
+	   msg:'hello',
+	   other:'xxxx'
+	 }
+          },
+	methods: {
+	  mymethod() {
+	  	/////
+	   }
+	}
+	
+  }
+</script>
+
+props : 개체의 속성
+
+slot : 부모한테서 받아온 내용(태그의 속성을 통해서 받아옴)
+
+2-way binding (양방향 바인딩) 
+
+deleteSkill (배열에서 하나씩 지워가는 기법)
+
+Vue에서 집중적으로 해야할 것들 : 콤포넌트 간의 데이터 수신, Vue 라우터 
+
+<router-link :to="{name:'Jobs'}">Jobs</router-link> : 이름을 쓰면 유리함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
